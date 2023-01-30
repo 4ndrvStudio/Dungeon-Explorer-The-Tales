@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: 9ac7f71e047846247ba668e389351bf7
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Whip
+    second: {fileID: 2100000, guid: 9efa99b4169dee54e979e49d672e687f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Whip_Blade
+    second: {fileID: 2100000, guid: 9db5e7c7f085f224f89da3e5116fa85f, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: SK_Frank_Whip_Weapon(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hand_r_Align
+      parentName: SK_Frank_Whip_Weapon(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Root
+      parentName: hand_r_Align
+      position: {x: 0.16477302, y: -0.059052058, z: 0.07468742}
+      rotation: {x: -0.26600552, y: 0.65088636, z: 0.6104171, w: 0.3646628}
+      scale: {x: 1, y: 0.999999, z: 0.999999}
+    - name: Sword_Blade01
+      parentName: Sword_Root
+      position: {x: -0.15569879, y: 0.000000009536743, z: -0.000000009536743}
+      rotation: {x: -0.00000027031638, y: -0.0000000041909436, z: -0.000000029802322,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Blade02
+      parentName: Sword_Blade01
+      position: {x: -0.022305107, y: -0.000000019073486, z: 0.0000000047683715}
+      rotation: {x: -0.00000012571786, y: 0.0014221913, z: -0.076425835, w: 0.99707425}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Blade03
+      parentName: Sword_Blade02
+      position: {x: -0.019108238, y: -0.000000019073486, z: -0.000000007152557}
+      rotation: {x: -0.00000015017577, y: -0.0000000023283042, z: -0.000000014901161,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Blade04
+      parentName: Sword_Blade03
+      position: {x: -0.018599395, y: -0.000000009536743, z: -0.000000019073486}
+      rotation: {x: -0.00000020931472, y: -0.0000000013969836, z: -2.9240925e-16,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Blade05
+      parentName: Sword_Blade04
+      position: {x: -0.016548958, y: -0.000000028610229, z: -0.000000009536743}
+      rotation: {x: 0.000000008572057, y: 0.064693145, z: 0.38025764, w: 0.92261523}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Blade06
+      parentName: Sword_Blade05
+      position: {x: -0.015192413, y: 0.000000009536743, z: -0.0000000047683715}
+      rotation: {x: -0.0000002516593, y: 0.018604092, z: 0.10934982, w: 0.99382925}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Blade07
+      parentName: Sword_Blade06
+      position: {x: -0.013573188, y: -0.000000038146972, z: 0.000000007152557}
+      rotation: {x: -0.00000009033829, y: 0.0000000051222755, z: -0.00000001490116,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Blade08
+      parentName: Sword_Blade07
+      position: {x: -0.013962784, y: 0, z: -0.000000026226044}
+      rotation: {x: -0.00000014691614, y: -9.313226e-10, z: -1.3682631e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Blade09
+      parentName: Sword_Blade08
+      position: {x: -0.013202591, y: -0.000000019073486, z: -0.000000026226044}
+      rotation: {x: -0.00000021466983, y: -0.0000000032596255, z: -0.00000001490116,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Blade10
+      parentName: Sword_Blade09
+      position: {x: -0.013961448, y: -0.000000019073486, z: 0.000000007152557}
+      rotation: {x: -0.00000020721927, y: 4.656644e-10, z: -0.000000014901161, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_Blade11
+      parentName: Sword_Blade10
+      position: {x: -0.0118022915, y: -0.000000038146972, z: -0.0000000166893}
+      rotation: {x: -0.00000014598479, y: -0.0000000027939695, z: 0.000000014901159,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sword_R
+      parentName: SK_Frank_Whip_Weapon(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: Sword_R
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

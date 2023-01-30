@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: ArmourBlackConfig
+  m_EditorClassIdentifier: Assembly-CSharp:DE.Models:EquipmentItemConfig
+  Icon: {fileID: 1902215317, guid: ccc67a4dcf2829c49a458078ac900663, type: 3}
+  Name: Armour Black
+  Id: 3001
+  WeaponType: 0
+  EquipmentRate: 1
+  Level: 1
+  EquipmentStats:
+  - StatName: 0
+    Payload: 5

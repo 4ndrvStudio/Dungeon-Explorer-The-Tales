@@ -1,0 +1,127 @@
+Frame Range
+
+-----------01_Whip_Equip --------------------			
+110	190	Frank_Whip@Unequip_Idle			
+270	330	Frank_Whip@Equip			
+360	630	Frank_Whip@Equip_Idle			
+680	760	Frank_Whip@Unequip			
+					
+-----------02_Whip_Evade --------------------			
+100	150	Frank_Whip@Evade_F			
+200	250	Frank_Whip@Evade_L			
+300	350	Frank_Whip@Evade_R			
+400	450	Frank_Whip@Evade_B			
+					
+-----------03_1_Whip_Locomotion(RM)	--------------------
+-----------03_2_Whip_Locomotion(IP)	--------------------		
+50	90	Frank_Whip@8Way_Run_F			
+120	160	Frank_Whip@8Way_Run_B			
+200	240	Frank_Whip@8Way_Run_FL			
+280	320	Frank_Whip@8Way_Run_FR			
+360	390	Frank_Whip@8Way_Run_L			
+440	470	Frank_Whip@8Way_Run_R			
+520	560	Frank_Whip@8Way_Run_BL			
+600	640	Frank_Whip@8Way_Run_BR			
+					
+740	810	Frank_Whip@8Way_Walk_F			
+880	950	Frank_Whip@8Way_Walk_B			
+1030	1100	Frank_Whip@8Way_Walk_FL			
+1180	1250	Frank_Whip@8Way_Walk_FR			
+1340	1390	Frank_Whip@8Way_Walk_L			
+1480	1530	Frank_Whip@8Way_Walk_R			
+1620	1690	Frank_Whip@8Way_Walk_BL			
+1760	1830	Frank_Whip@8Way_Walk_BR			
+										
+2000	2070	Frank_Whip@8Way_Walk_Guard_F			
+2140	2210	Frank_Whip@8Way_Walk_Guard_B			
+2280	2350	Frank_Whip@8Way_Walk_Guard_L			
+2430	2500	Frank_Whip@8Way_Walk_Guard_R			
+2590	2640	Frank_Whip@8Way_Walk_Guard_FL			
+2730	2780	Frank_Whip@8Way_Walk_Guard_FR			
+2870	2940	Frank_Whip@8Way_Walk_Guard_BL			
+3010	3080	Frank_Whip@8Way_Walk_Guard_BR			
+					
+3200	3234	Frank_Whip@Unequip_Run_Turbo1			
+3250	3278	Frank_Whip@Unequip_Run_Turbo2			
+					
+-----------04_Whip_Jump --------------------			
+30	90	Frank_Whip@Jump_01			
+130	190	Frank_Whip@Jump_02			
+230	290	Frank_Whip@Jump_03			
+					
+350	359	Frank_Whip@Jump_01_Start_0Height			
+380	414	Frank_Whip@Jump_01_Air_0Height			
+440	457	Frank_Whip@Jump_01_End_0Height			
+					
+530	564	Frank_Whip@Jump_Double			
+					
+630	690	Frank_Whip@Jump_01_0Height			
+730	790	Frank_Whip@Jump_02_0Height			
+830	890	Frank_Whip@Jump_03_0Height			
+					
+-----------05_Whip_Hit --------------------			
+60	120	Frank_Whip@Guard			
+170	210	Frank_Whip@Block			
+										
+300	330	Frank_Whip@Hit01			
+360	400	Frank_Whip@Hit02			
+430	470	Frank_Whip@Hit03			
+500	560	Frank_Whip@Hit04			
+600	670	Frank_Whip@Hit05			
+700	830	Frank_Whip@Hit06			
+870	1005	Frank_Whip@Hit07			
+
+					
+-----------06_Whip_Die --------------------			
+80	220	Frank_Whip@Die01			
+300	440	Frank_Whip@Die02			
+530	600	Frank_Whip@Die03			
+670	745	Frank_Whip@Die04			
+
+					
+-----------07_Whip_Attack --------------------			
+50	100	Frank_Whip@Attack01			
+150	207	Frank_Whip@Attack02			
+260	340	Frank_Whip@Attack03			
+410	500	Frank_Whip@Attack04			
+570	635	Frank_Whip@Attack05			
+700	762	Frank_Whip@Attack06			
+	
+				
+----------- 08_Whip_ComboAll_Skill -------------------------------
+400	560	Frank_Whip@Combo01_All			
+630	790	Frank_Whip@Combo02_All			
+880	1080	Frank_Whip@Combo03_All			
+1180	1331	Frank_Whip@Combo04_All			
+1420	1660	Frank_Whip@Combo05_All			
+										
+100	290	Frank_Whip@Critical_Attack			
+1770	1920	Frank_Whip@Skill01			
+2000	2190	Frank_Whip@Skill02			
+					
+
+----------- 10_Whip_Damage_Man -------------------------------					
+0	150	Frank_Whip@Hit_Skill01			
+220	410	Frank_Whip@Hit_Skill02			
+500	690	Frank_Whip@Hit_Critical_Attack			
+					
+					
+------------ 09_Whip_Combo_Cut --------------------------------
+100	174	Frank_Whip@Combo01_1			
+220	312	Frank_Whip@Combo01_2			
+360	423	Frank_Whip@Combo01_3			
+										
+600	654	Frank_Whip@Combo02_1			
+700	770	Frank_Whip@Combo02_2			
+830	929	Frank_Whip@Combo02_3			
+										
+1300	1385	Frank_Whip@Combo03_1			
+1430	1520	Frank_Whip@Combo03_2			
+1570	1663	Frank_Whip@Combo03_3			
+										
+1900	1980	Frank_Whip@Combo04_1			
+2050	2159	Frank_Whip@Combo04_2			
+										
+2400	2475	Frank_Whip@Combo05_1			
+2540	2630	Frank_Whip@Combo05_2			
+2700	2850	Frank_Whip@Combo05_3			
