@@ -85,13 +85,15 @@ namespace DE
         }
         public void Aiming()
         {
-        
+            //calculate time player press aiming button
             AimTime = AimJoy.IsPressed ?  AimTime += Time.deltaTime : 0;
-
+            
+            //set time to bool = true. avoid multi press to shoot.
             if (AimJoy.IsPressed && AimJoy.Direction.magnitude > 0.8f && AimTime> 0.4f) isAim = true;
 
             if (isAim)
             {
+                // if player release aiming button then play shooting
                 if (AimJoy.IsPressed == false)
                 {
                     PlayShooting = true;
@@ -108,18 +110,19 @@ namespace DE
         
             if (isStartRoll)
             {
+                // if player release aiming button then play rolling
                 if (RollJoy.IsPressed == false)
                 {
                     Debug.Log("rolling");
                     PlayRolling = true;
+                    // temp: Reload UI
                     RollJoyReload.fillAmount = 1;
                     DOTween.To(()=> RollJoyReload.fillAmount, x =>  RollJoyReload.fillAmount = x, 0, 3f ).OnComplete(() => _canRoll = true);
+                    
                     isStartRoll = false;
                     _canRoll = false;
                 }
             }
-
-          
         }
     }
 

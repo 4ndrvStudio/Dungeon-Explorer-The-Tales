@@ -14,6 +14,7 @@ namespace DE
         // Update is called once per frame
         void Update()
         {
+            // Test Spawn player
             if (View_Gameplay.Instance != null && !IsSpawned) {
                 Instantiate(_playerPrefab, _spawnerLocation.position, Quaternion.identity, this.transform);
                 IsSpawned = true;

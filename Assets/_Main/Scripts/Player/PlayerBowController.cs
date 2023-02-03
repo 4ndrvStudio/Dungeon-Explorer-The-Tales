@@ -38,12 +38,15 @@ namespace DE
         }
         void Aiming()
         {
+            //set animtion when hold aim button
             if (_playerInput.AimTime > 0.2f) _anim.SetBool("isAim", _playerInput.AimJoy.IsPressed);
             else _anim.SetBool("isAim", false);
 
+            //get direction to aim
             Vector2 _input = new Vector2(_playerInput.AimJoy.Horizontal, _playerInput.AimJoy.Vertical);
             Vector2 inputDir = _input.normalized;
-
+            
+            //if player aiming, calculate direction and enable laser, set camera postion;
             if (_playerInput.AimJoy.IsPressed)
             {
                 float targetRotation = Mathf.Atan2(inputDir.x, inputDir.y) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
@@ -78,19 +81,15 @@ namespace DE
             }
         }
 
-        IEnumerator ResetCam()
-        {
-
-            yield return new WaitForSeconds(0.2f);
-        }
-
         void ShootLaserFromTargetPosition(Vector3 targetPosition, Vector3 direction, float length)
         {
+            //calculate laser endpoint
             Ray ray = new Ray(targetPosition, direction);
             RaycastHit raycastHit;
             Vector3 endPosition = targetPosition + (Mathf.Lerp(0f, length, 2f) * direction);
             Vector3 aimPosition = targetPosition + (Mathf.Lerp(0f, 3, 2f) * direction);
 
+            //change camera pos
             m_aimCamPos.position = Vector3.MoveTowards(m_aimCamPos.position, aimPosition, 35f * Time.deltaTime);
 
             if (Physics.Raycast(ray, out raycastHit, length, ~IgnoreLayer))

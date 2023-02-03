@@ -42,6 +42,7 @@ namespace DE
         }
         void NormalAttack()
         {
+            // get index attack not same prev index attack
             if (_anim.GetBool("isAction")) return;
             int targetAttack = Random.Range(0, _normalAttack.Length);
             if (targetAttack == _targetAttack)
@@ -51,7 +52,10 @@ namespace DE
                 Debug.Log(targetAttack);
             };
             _targetAttack = targetAttack;
+
             AimSupport();
+
+            //excute attack
             _anim.CrossFade(_normalAttack[_targetAttack], 0.2f);
 
         }
@@ -77,7 +81,6 @@ namespace DE
             {
 
                 RaycastHit hit;
-                // Does the ray intersect any objects excluding the player layer
                 if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, _attackMoveDis, _obstacleMask))
                 {
                     transform.DOMove(transform.position + transform.forward * _attackMoveDis, _attackMoveDuration);

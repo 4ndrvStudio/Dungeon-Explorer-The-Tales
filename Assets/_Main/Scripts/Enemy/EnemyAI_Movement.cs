@@ -12,8 +12,8 @@ namespace DE
         [SerializeField] protected NavMeshAgent _navMeshAgent;
         [SerializeField] protected float _startWaitTime = 2.5f;
         [SerializeField] protected float _timeToRotate = 2;
-        [SerializeField] protected float _speedWalk = 2;
-        [SerializeField] protected float _speedRun = 4;
+        [SerializeField] private float _speedWalk = 2;
+        [SerializeField] private float _speedRun = 4;
        // [SerializeField] protected float _stoppingDistance = 4;
         [SerializeField] protected float _viewRadius = 15;
         [SerializeField] protected float _viewAngle = 180;

@@ -9,14 +9,17 @@ public class Boolcheck : StateMachineBehaviour
     [SerializeField] private bool _resetOnExit = true;
     
 
-    // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
+
+
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        //check if in animation not empty state
         animator.SetBool(_boolName, _status);
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        //reset 
         if (_resetOnExit)
             animator.SetBool(_boolName, !_status);
     }

@@ -58,21 +58,25 @@ namespace DE
                 inputDirRoll = _inputRoll.normalized;
 
             }
+            // if player is not in action state then player can roll.
             if (_playerInput.PlayRolling && !_anim.GetBool("isAction"))
             {
-
+                //calculate direction to roll
                 float targetRotation = Mathf.Atan2(inputDirRoll.x, inputDirRoll.y) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
                 transform.eulerAngles = Vector3.up * Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRotation, ref _turnSmoothVelocity, 0f);
 
                 _anim.SetBool("isRolling", true);
                 Vector3 rollPosition = transform.position + transform.forward * _rollDistance;
                 float disToRollPosition = Vector3.Distance(rollPosition, transform.position);
+
+                //check farest postion to roll, avoid rolling over the wall
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, disToRollPosition, _obstacleMask))
                 {
                     rollPosition = transform.position;
                 }
 
+                //excute roll by translation
                 transform.DOMove(rollPosition, 0.2f).OnComplete(() =>
                 {
                      _anim.SetBool("isRolling", false);

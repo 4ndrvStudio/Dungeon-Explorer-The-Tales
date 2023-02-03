@@ -23,12 +23,14 @@ namespace DE
 
         void NearestCheck()
         {
+            //select enemy in range
             _enemyInRange = new List<Collider>(Physics.OverlapSphere(transform.position, 50f, _enemyMask));
             _nearestToAttack = new List<Collider>(Physics.OverlapSphere(transform.position, 2f, _enemyMask));
 
             if (_nearestToAttack.Count > 0)
             {
                 float temp = Mathf.Infinity;
+                //check nearest enemy by quick sort
                 _nearestToAttack.ForEach(targetAttack =>
                 {
                     Transform enemy = targetAttack.transform;

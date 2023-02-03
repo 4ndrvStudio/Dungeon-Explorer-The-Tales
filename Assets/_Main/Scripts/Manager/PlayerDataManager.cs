@@ -47,7 +47,6 @@ namespace DE
             _userInfo.Level = userInfo.Level;
             _userInfo.Exp = userInfo.Exp;
             DataChangeEvent.Invoke(DataChangeEventName.User_Info);
-            
         }
         public void UpdateName(string name ) {
             _userInfo.UserName = name;
@@ -61,7 +60,9 @@ namespace DE
         }
 
         public void UpdateEquipmentItems(List<UserEquipmentItems> userEquipmentItemList ) {
+            
             _userEquipmentItems.Clear();
+            //find and update
             userEquipmentItemList.ForEach(item => {
                 EquipmentItemConfig equipmentItemConfig =  EquipmentConfigManager.Instance.AllEquipmentConfigFile.Find(equipmentItemConfig => equipmentItemConfig.Id == item.Id);
                 if(equipmentItemConfig != null) {

@@ -38,9 +38,11 @@ namespace DE
         {
             if (_enemyBrain.E_AI_STATE == E_AI_STATE.Combat)
             {
-
+                //if player player not in combat state, return to chasing
                 if (_enemyBrain.DisToPlayer > _enemyBrain.DisToCombat) _enemyBrain.E_AI_STATE = E_AI_STATE.Chasing;
                 else E_COMBAT_STATE = E_COMBAT_STATE.NormalAttack;
+                
+                //select combat state. 
                 switch (E_COMBAT_STATE)
                 {
                     case E_COMBAT_STATE.NormalAttack:
@@ -57,7 +59,7 @@ namespace DE
 
         private void NormalAttack()
         {
-
+            
             _attack_ReloadTime -= Time.deltaTime;
             if (_attack_ReloadTime >= _attack_ReloadTime_M - 0.1f)
             {
