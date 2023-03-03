@@ -14,8 +14,9 @@ namespace DE
         [SerializeField] private Button _quitBtn;
 
         // Start is called before the first frame update
-        void Start()
+        public override void Start()
         {
+            base.Start();
 
             _countinueBtn.onClick.AddListener(() => Hide());
             _settingBtn.onClick.AddListener(() => UIManager.Instance.ShowPopup(PopupName.Settings));

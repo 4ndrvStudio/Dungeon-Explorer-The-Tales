@@ -1,0 +1,55 @@
+{
+    "items": [
+        {
+            "inventoryItemId": "1001",
+            "name": "WeaponS",
+            "stats": {
+                "value": 10
+            },
+            "rate": 1
+        },
+        {
+            "inventoryItemId": "2001",
+            "name": "WeaponL",
+            "stats": {
+                "value": 10
+            },
+            "rate": 1
+        },
+        {
+            "inventoryItemId": "3001",
+            "name": "Armour",
+            "stats": {
+                "value": 10
+            },
+            "rate": 1
+        },
+        {
+            "inventoryItemId": "4001",
+            "name": "Necklace",
+            "stats": {
+                "value": 10
+            },
+            "rate": 1
+        },
+        {
+            "inventoryItemId": "5001",
+            "name": "Gloves",
+            "stats": {
+                "value": 10
+            },
+            "rate": 1
+        },
+        {
+            "inventoryItemId": "6001",
+            "name": "Boots",
+            "stats": {
+                "value": 10
+            },
+            "rate": 1
+        }
+    ],
+    "upgrade": {
+        "maxLevel": 6
+    }
+}

@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pack4_0
+      name: Gloves_test
       rect:
         serializedVersion: 2
         x: 221
@@ -149,6 +149,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: weapon_left
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 907
+        width: 168
+        height: 168
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.56046915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64465968af49bff438d8e8c2c2d4af36
+      internalID: 1039457431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -160,7 +181,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pack4_0: 508130796
+      Gloves_test: 508130796
+      weapon_left: 1039457431
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

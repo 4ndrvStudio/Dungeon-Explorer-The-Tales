@@ -145,7 +145,7 @@ namespace DE
         private void Patroling()
         {
                                   
-              _enemyBrain.E_AI_STATE = E_AI_STATE.Patrolling;
+            _enemyBrain.E_AI_STATE = E_AI_STATE.Patrolling;
             _navMeshAgent.stoppingDistance = 0;
 
             if (m_PlayerNear)

@@ -39,7 +39,7 @@ namespace DE
             }
         }
 
-        public void ShowPopup(PopupName popupName, Dictionary<string, string> customProperties = null)
+        public void ShowPopup(PopupName popupName, Dictionary<string, object> customProperties = null)
         {
             UIPopup selectedPopup = _listPopup.Find(popup => popup.PopupName == popupName);
             if (selectedPopup != null) selectedPopup.Show(customProperties);
@@ -90,7 +90,7 @@ namespace DE
         }
 
          void CheckNameState() {
-            ShowPopup(PopupName.SetName,new Dictionary<string, string>{{"isRequire", "true"}});
+            ShowPopup(PopupName.SetName,new Dictionary<string, object>{{"isRequire", "true"}});
         }
 
 

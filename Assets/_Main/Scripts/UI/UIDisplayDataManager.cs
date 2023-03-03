@@ -4,6 +4,7 @@ using UnityEngine;
 using DE.Models;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 
 namespace DE
@@ -56,17 +57,17 @@ namespace DE
         }
 
 
-        private void DataChangeListener(string dataChangeEventName)
+        private void DataChangeListener(DataChangeEventName dataChangeEventName)
         {
             switch (dataChangeEventName)
             {
-                case string value when value == DataChangeEventName.User_Info:
+                case DataChangeEventName.User_Info:
                     UpdateUserInfo();
                     break;
-                case string value when value == DataChangeEventName.User_Currency:
+                case DataChangeEventName.User_Currency:
                     UpdateUserCurrencies();
                     break;
-                case string value when value == DataChangeEventName.User_Equipment:
+                case DataChangeEventName.User_Equipment:
                     UpdateUserEquipment();
                     break;
             }
@@ -97,33 +98,36 @@ namespace DE
             _userCurrenciesUIList.ForEach(userCurrenciesUI =>
             {
                 if (userCurrenciesUI.Energy != null)
+
+                    //DOTween.To(() => int.Parse(userCurrenciesUI.Energy.text), x => userCurrenciesUI.Energy.text = x.ToString() + "/30", PlayerDataManager.Instance.UserCurrencies.Energy,2f);
                     userCurrenciesUI.Energy.text = PlayerDataManager.Instance.UserCurrencies.Energy.ToString() + "/30";
 
 
                 if (userCurrenciesUI.Gold != null)
-                    userCurrenciesUI.Gold.text = PlayerDataManager.Instance.UserCurrencies.Gold.ToString();
+                    //DOTween.To(() => int.Parse(userCurrenciesUI.Gold.text), x => userCurrenciesUI.Gold.text = x.ToString() , PlayerDataManager.Instance.UserCurrencies.Energy,2f);
+                    userCurrenciesUI.Gold.text = PlayerDataManager.Instance.UserCurrencies.Gold.ToString("#,##0");
 
 
                 if (userCurrenciesUI.Gem != null)
-                    userCurrenciesUI.Gem.text = PlayerDataManager.Instance.UserCurrencies.Gem.ToString();
+                    userCurrenciesUI.Gem.text = PlayerDataManager.Instance.UserCurrencies.Gem.ToString("#,##0");
 
             });
         }
 
         private void UpdateUserEquipment()
         {
-            _userEquipmentItemContainer.ForEach(item => Destroy(item));
-            _userEquipmentItemContainer.Clear();
+            // _userEquipmentItemContainer.ForEach(item => Destroy(item));
+            // _userEquipmentItemContainer.Clear();
 
-            _userEquipmentUIList.ForEach(userEquipmentUI =>
-            {
-                PlayerDataManager.Instance.UserEquipmentItems.ForEach(equipmentItem =>
-                {
-                    GameObject item = Instantiate(userEquipmentUI.ItemPrefab, Vector3.zero, Quaternion.identity, userEquipmentUI.ContentUI.transform);
-                    item.GetComponent<Slot_Item>().SetItemData(equipmentItem, userEquipmentUI.ViewName);
-                    _userEquipmentItemContainer.Add(item);
-                });
-            });
+            // _userEquipmentUIList.ForEach(userEquipmentUI =>
+            // {
+            //     PlayerDataManager.Instance.UserEquipmentItems.ForEach(equipmentItem =>
+            //     {
+            //         GameObject item = Instantiate(userEquipmentUI.ItemPrefab, Vector3.zero, Quaternion.identity, userEquipmentUI.ContentUI.transform);
+            //         item.GetComponent<Slot_Item>().SetItemData(equipmentItem, userEquipmentUI.ViewName);
+            //         _userEquipmentItemContainer.Add(item);
+            //     });
+            // });
         }
 
     }

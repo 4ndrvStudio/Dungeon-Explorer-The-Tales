@@ -9,8 +9,7 @@ namespace DE
     {
         [SerializeField] private Button _goBackBtn;
         [SerializeField] private Button _goHomeBtn;
-
-
+        
         // Start is called before the first frame update
         void Start()
         {

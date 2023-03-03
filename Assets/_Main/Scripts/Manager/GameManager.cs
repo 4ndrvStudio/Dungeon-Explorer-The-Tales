@@ -39,11 +39,11 @@ namespace DE
             }
         }
 
-        public async void Start()
+        public void Start()
         {
 
             Application.targetFrameRate = 300;
-            await UnityServices.InitializeAsync();
+           // await UnityServices.InitializeAsync();
              
         }
         public async Task LoginAnonymous()
@@ -53,13 +53,14 @@ namespace DE
                 await AuthenticationService.Instance.SignInAnonymouslyAsync();
 
                 PlayerId  = AuthenticationService.Instance.PlayerId;
-                CloudCodeResult dataResult= await CloudCodeManager.Instance.GetUserInfo();
-                CloudCodeResult currenciesResult = await CloudCodeManager.Instance.GetUserCurrencies();
                 
-                PlayerDataManager.Instance.UpdateUserInfo((UserInfo) dataResult.Data);
-                PlayerDataManager.Instance.UpdateCurrencies( (UserCurrencies) currenciesResult.Data);
-                
+                PlayerDataManager.Instance.UpdateUserInfo();
+                PlayerDataManager.Instance.UpdateCurrencies();
+                InventoryManager.Instance.UpdateInventory();
+                DataConfigManager.Instance.GetBundlePackConfig();
 
+
+        
             }
             catch (AuthenticationException ex)
             {

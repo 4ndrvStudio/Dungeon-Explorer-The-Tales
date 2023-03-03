@@ -1,0 +1,146 @@
+key,type,schemaId,value
+InventoryItemConfig,json,,"{
+    ""items"": [
+        {
+            ""inventoryItemId"": ""1001"",
+            ""name"": ""WeaponS"",
+            ""stats"": {
+                ""value"": 10
+            },
+            ""rate"": 1
+        },
+        {
+            ""inventoryItemId"": ""2001"",
+            ""name"": ""WeaponL"",
+            ""stats"": {
+                ""value"": 10
+            },
+            ""rate"": 1
+        },
+        {
+            ""inventoryItemId"": ""3001"",
+            ""name"": ""Armour"",
+            ""stats"": {
+                ""value"": 10
+            },
+            ""rate"": 1
+        },
+        {
+            ""inventoryItemId"": ""4001"",
+            ""name"": ""Necklace"",
+            ""stats"": {
+                ""value"": 10
+            },
+            ""rate"": 1
+        },
+        {
+            ""inventoryItemId"": ""5001"",
+            ""name"": ""Gloves"",
+            ""stats"": {
+                ""value"": 10
+            },
+            ""rate"": 1
+        },
+        {
+            ""inventoryItemId"": ""6001"",
+            ""name"": ""Boots"",
+            ""stats"": {
+                ""value"": 10
+            },
+            ""rate"": 1
+        }
+    ],
+    ""upgrade"": {
+        ""maxLevel"": 6
+    }
+}"
+BundlePackConfig,json,,"{
+    ""box"": [
+        {   
+            ""packId"": ""normal_box_pack"",
+            ""rate"": 1,
+            ""price"": 80,
+            ""rewardRate"": 1,
+            ""rewardStar"": 1
+        },
+        {
+            ""packId"": ""epic_box_pack"",
+            ""rate"": 2,
+            ""price"": 300,
+            ""rewardRate"": 1,
+            ""rewardStar"": 3
+        },
+        {
+            ""packId"": ""legendary_box_pack"",
+            ""rate"": 3,
+            ""price"": 650,
+            ""rewardRate"": 2,
+            ""rewardStar"": 4
+        }
+    ],
+    ""gold"": [
+        {
+            ""packId"": ""gold_pack_1"",
+            ""amount"": 1500,
+            ""price"": 12
+        },
+        {
+            ""packId"": ""gold_pack_2"",
+            ""amount"": 4000,
+            ""price"": 48
+        },
+        {
+            ""packId"": ""gold_pack_3"",
+            ""amount"": 12000,
+            ""price"": 120
+        },
+        {
+            ""packId"": ""gold_pack_4"",
+            ""amount"": 25000,
+            ""price"": 240
+        },
+        {
+            ""packId"": ""gold_pack_5"",
+            ""amount"": 60000,
+            ""price"": 490
+        }
+    ],
+    ""gem"": [
+        {
+            ""packId"": ""gem_pack_80"",
+            ""amount"": 80,
+            ""price"": {
+                ""vnd"": 80000
+            }
+        },
+        {
+            ""packId"": ""gem_pack_500"",
+            ""amount"": 500,
+            ""price"": {
+                ""vnd"": 118000
+            }
+        },
+        {
+            ""packId"": ""gem_pack_1200"",
+            ""amount"": 1200,
+            ""price"": {
+                ""vnd"": 256000
+            }
+        },
+        {
+            ""packId"": ""gem_pack_2500"",
+            ""amount"": 2500,
+            ""price"": {
+                ""vnd"": 470000
+            }
+        },
+        {
+            ""packId"": ""gem_pack_6500"",
+            ""amount"": 6500,
+            ""price"": {
+                ""vnd"": 12000
+            }
+        }
+    ]
+}
+"

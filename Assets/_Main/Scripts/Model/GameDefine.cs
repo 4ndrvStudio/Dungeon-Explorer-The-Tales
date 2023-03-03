@@ -4,6 +4,11 @@ using UnityEngine;
 namespace DE
 {
    
+    public enum CurrencyName {
+        Gold,
+        Gem,
+        Energy
+    }
 
     public class SceneName
     {
@@ -15,11 +20,31 @@ namespace DE
         public static string User_SetName = "user-set-name";
         public static string User_GetInfo = "user-get-info";
         public static string User_GetCurrencies = "user-get-currencies";
+        
+        public static string Buy_GEM = "buy-gem";
+        public static string Buy_GOLD = "buy-gold";
+        public static string Buy_Box = "buy-box";
+
+        public static string Item_Get_All  = "item-get-all";
+
+        public static string Get_Bundle_Pack_Config = "get-bundle-pack-config";
+
+
     }
-    public class DataChangeEventName {
-        public static string User_Info = "User_Info";
-        public static string User_Currency = "User_Currency";
-        public static string User_Equipment = "User_Equipment";
+    public enum DataChangeEventName {
+        User_Info,
+        User_Currency,
+        User_Equipment,
+        User_Inventory
+    }
+
+    public enum IAPProductID {
+        gem_pack_80,
+        gem_pack_500,
+        gem_pack_1200,
+        gem_pack_2500,
+        gem_pack_6500,
+        gem_pack_14000,
     }
 
     public enum ViewName
@@ -43,22 +68,20 @@ namespace DE
         Settings,
         UserInfo,
         Pause,
-        GameplayDeath
+        GameplayDeath,
+        PopupPurchase,
+        PopupReward,
+        PopupError
     }
 
-    public enum EquipmentType {
-        WeaponS,
-        WeaponL,
-        Armour,
-        Necklace,
-        Gloves,
-        Boots
-    }
-     public enum EquipmentRate {
-        Normal = 1,
-        Good = 2 , 
-        Better = 3,
-        Excellent = 4
+    public enum EquipmentSlot {
+        None = 0, 
+        WeaponS = 1,  
+        WeaponL = 2,
+        Armour = 3,
+        Necklace = 4,
+        Gloves = 5,
+        Boots = 6
     }
 
     [System.Serializable]

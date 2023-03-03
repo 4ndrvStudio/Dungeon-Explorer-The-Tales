@@ -32,7 +32,6 @@ namespace DE
 
             if(Instance != this) Destroy(this);
 
-
             _maxArrow = Arrow;
             _maxHealth = Health;
 

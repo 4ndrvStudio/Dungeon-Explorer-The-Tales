@@ -11,8 +11,9 @@ namespace DE
         [SerializeField] private Button _goHomeBtn;
 
         // Start is called before the first frame update
-        void Start()
-        {  
+        public override void Start()
+        {
+            base.Start();
             _goHomeBtn.onClick.AddListener(()=> QuitGame());
         }
 

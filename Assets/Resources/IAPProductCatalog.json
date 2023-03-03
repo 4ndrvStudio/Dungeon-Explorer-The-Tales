@@ -1,0 +1,74 @@
+{
+    "appleSKU": "",
+    "appleTeamID": "",
+    "enableCodelessAutoInitialization": false,
+    "enableUnityGamingServicesAutoInitialization": false,
+    "products": [
+        {
+            "id": "testproduct",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        },
+        {
+            "id": "",
+            "type": 0,
+            "storeIDs": [],
+            "defaultDescription": {
+                "googleLocale": 4,
+                "title": "",
+                "description": ""
+            },
+            "screenshotPath": "",
+            "applePriceTier": 0,
+            "googlePrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "pricingTemplateID": "",
+            "descriptions": [],
+            "udpPrice": {
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "num": 0.0
+            },
+            "payouts": []
+        }
+    ]
+}

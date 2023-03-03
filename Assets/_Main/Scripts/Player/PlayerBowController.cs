@@ -73,7 +73,6 @@ namespace DE
                 rigid.AddForce(arrow.transform.forward * 30f, ForceMode.Impulse);
                 _playerStats.UseArrow();
                 _playerInput.PlayShooting = false;
-
             }
             else
             {
@@ -88,10 +87,10 @@ namespace DE
             RaycastHit raycastHit;
             Vector3 endPosition = targetPosition + (Mathf.Lerp(0f, length, 2f) * direction);
             Vector3 aimPosition = targetPosition + (Mathf.Lerp(0f, 3, 2f) * direction);
-
+            
             //change camera pos
             m_aimCamPos.position = Vector3.MoveTowards(m_aimCamPos.position, aimPosition, 35f * Time.deltaTime);
-
+            
             if (Physics.Raycast(ray, out raycastHit, length, ~IgnoreLayer))
             {
                 endPosition = raycastHit.point;
@@ -99,6 +98,7 @@ namespace DE
 
             _lineRenderer.SetPosition(0, targetPosition);
             _lineRenderer.SetPosition(1, endPosition);
+
         }
     }
 

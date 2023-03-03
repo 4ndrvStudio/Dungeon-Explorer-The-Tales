@@ -88,7 +88,9 @@ namespace DE
 
             _bodyMesh.material = _effectMat == null ? m_enemyMat : m_effectMat;
             _enemyMat = _bodyMesh.materials[0];
+
             _emiTex = _enemyMat.GetTexture("_EmissionMap");
+            
             //Effect
             if (_emiTex != null) _enemyMat.SetTexture("_EmissionMap", null);
 
@@ -103,7 +105,7 @@ namespace DE
                             _enemyMat.DOColor(Color.black, "_EmissionColor", 0);
                             if (_emiTex != null) _enemyMat.SetTexture("_EmissionMap", _emiTex);
                             _bodyMesh.material = m_enemyMat;
-
+                                                            
                         });
                     });
                 });

@@ -11,24 +11,24 @@ namespace DE
     public class Popup_SetName : UIPopup
     {
         [SerializeField] private Button _setNameButton;
-        [SerializeField] private Button _closeButton;
         [SerializeField] private TMP_InputField _inputName;
         [SerializeField] private GameObject _errorPopup;
         
         // Start is called before the first frame update
-        void Start()
+        public override void Start()
         {
+            base.Start();
             _setNameButton.onClick.AddListener(() => SetName());
-            _closeButton.onClick.AddListener(() => Hide());
         }
 
-        public override void Show(Dictionary<string, string> customProperties = null)
+        public override void Show(Dictionary<string, object> customProperties = null)
         {
             base.Show(customProperties);
-            if(bool.Parse(customProperties["isRequire"])) {
-                _closeButton.gameObject.SetActive(false);
+            bool isRequire = (bool) customProperties["isRequire"];
+            if(isRequire) {
+                CloseBTN.gameObject.SetActive(false);
             } else {
-                _closeButton.gameObject.SetActive(true);
+                CloseBTN.gameObject.SetActive(true);
             }
            
         }
