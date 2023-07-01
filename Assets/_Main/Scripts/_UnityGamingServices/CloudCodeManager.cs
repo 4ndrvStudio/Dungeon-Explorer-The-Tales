@@ -7,14 +7,12 @@ using Unity.Services.CloudCode;
 using DE.Models;
 using Newtonsoft.Json;
 
-
-
 namespace DE
 {
     public class CloudCodeManager : MonoBehaviour
     {
         public static CloudCodeManager Instance;
-
+        
         void Awake()
         {
             if (Instance != this && Instance != null)
@@ -37,7 +35,6 @@ namespace DE
         {
             try
             {
-
                 var userInfo = await CloudCodeService.Instance.CallEndpointAsync<UserInfo>(ApiName.User_GetInfo);
 
                 return new CloudCodeResult
@@ -214,7 +211,6 @@ namespace DE
             }
             catch (CloudCodeException err)
             {
-
                 CloudCodeErrorResult errorResult =  HandleCloudCodeError(err);
                 Debug.Log(errorResult.message);
 
@@ -226,7 +222,7 @@ namespace DE
                 };
             }
         }
-
+        
         public async Task<CloudCodeResult> GetBundlePackConfig()
         {
             try
